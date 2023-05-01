@@ -6,16 +6,19 @@
 
 body{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;
+    align-items: center;*/
     min-height: 100vh;
     background-color: #222327;
 }
 
 .navigation{
-    position: relative;
-    width: 400px;
-    height: 60px;
+    position: fixed;
+    top: 88%;
+    bottom: 2%;
+    width: 45%;
+    left: 27.5%;
+    height: 10%;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -25,7 +28,7 @@ body{
 
 .navigation ul{
     display: flex;
-    width: 350px;
+    width: auto;
 }
 
 .navigation ul li{
@@ -135,4 +138,10 @@ body{
 }
 .navigation ul li:nth-child(5).active ~ .indicator{
     transform: translateX(calc(70px*4));
+}
+.navigation ul li:nth-child(6).active ~ .indicator{
+    transform: translateX(calc(70px*5));
+}
+.navigation ul li:nth-child(7).active ~ .indicator{
+    transform: translateX(calc(70px*6));
 }
